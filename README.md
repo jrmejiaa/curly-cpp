@@ -43,4 +43,4 @@ GTest is a very well known testing framework of Google to test C++ code. I wante
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details leakage
