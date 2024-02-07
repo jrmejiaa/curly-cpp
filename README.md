@@ -1,6 +1,6 @@
 # Curly CPP 
 
-Please do not think twice about the name. Github suggest it me and I like it. Here you will find some basic code of C++ and CMake. My idea basically is to put here some of my findings of C++ and CMake while I am improving my skills in the subject. All the projects are going to be made with CMake as building tool and all the projects are going to be in C++ 20. 
+Please don't think twice about the name. Github suggest it me and I like it. Here you will find some basic code of C++ and CMake. My idea basically is to put here some of my findings of C++ and CMake while I am improving my skills in the subject. All the projects are going to be made with CMake as building tool and all the projects are going to be in C++ 20.
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ mkdir build && cd build && cmake ../<name-of-project> && make
 
 Depending on the project the executable differs, so it is not that easy to know what you would do next.
 
-Happy Coding! 
+Happy Coding!
 
 ## Projects
 
