@@ -1,4 +1,4 @@
-#include <multiply/multiply.h>
+#include <multiply/multiply.hpp>
 #include <gtest/gtest.h>
 
 TEST(MultiplyTests, TestIntegerOne_One)

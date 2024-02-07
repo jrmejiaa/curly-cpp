@@ -1,4 +1,4 @@
-#include <multiply/multiply.h>
+#include <multiply/multiply.hpp>
 
 int multiply(int a, int b)
 {
