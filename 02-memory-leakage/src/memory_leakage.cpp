@@ -22,18 +22,18 @@ int main()
     cout << "----------------------------------------------------------\n";
 
     cout << "Getting value of array.\n";
-    cout << "b[10]: " << b[10] << ".\n";
+    cout << "b[10]: " << b[9] << ".\n";
 
     cout << "----------------------------------------------------------\n";
 
-    cout << "Setting value of index 10 to 25.\n";
-    cout << "b[10] = 25.\n";
-    b[10] = 25;
+    cout << "Setting value of index 9 to 25.\n";
+    cout << "b[9] = 25.\n";
+    b[9] = 25;
 
     cout << "----------------------------------------------------------\n";
 
     cout << "Getting value of array.\n";
-    cout << "b[10]: " << b[10] << ".\n";
+    cout << "b[10]: " << b[9] << ".\n";
 
     return 0;
 }

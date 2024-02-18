@@ -6,7 +6,7 @@
 class IntArrayOutOfBoundsException : public std::exception
 {
    public:
-    char* what() { return "The index is not in scope"; }
+    const char* what() { return "The index is not in scope"; }
 };
 
 class IntArray
