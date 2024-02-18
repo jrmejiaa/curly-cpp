@@ -38,7 +38,7 @@ GTest is a very well known testing framework of Google to test C++ code. I wante
 
 ### Memory Leakage
 
-A very simple code showing a memory leakage and using [ASan](https://github.com/google/sanitizers) flags to detect it. This is basically a Heap memory allocation and what happen when you are not careful enough. I used in this the flag `-fsanitize=leak` to detect leaks in the code. This feature is off course not perfect, but it is really helpful to detect small bugs in the code as soon as possible.
+A very simple code showing a memory leakage and using [ASan](https://github.com/google/sanitizers) flags to detect it. This is basically a Heap memory allocation and what happen when you are not careful enough. I used the flag `-fsanitize=leak` to detect leaks in the code. This feature is not perfect, but it is really helpful to detect small bugs in the code as soon as possible.
 
 ### Curly Copy
 
