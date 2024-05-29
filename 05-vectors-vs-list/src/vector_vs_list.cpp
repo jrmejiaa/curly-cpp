@@ -30,7 +30,7 @@ template <typename T>
 void BuildContainer(const int& size, T& v)
 {
     for (int i = 0; i < size; i++) {
-        int r = (int)rand();
+        int r         = (int)rand();
         bool inserted = false;
         for (auto it = begin(v); it != end(v); it++) {
             if (*it > r) {
@@ -46,7 +46,7 @@ void BuildContainer(const int& size, T& v)
     }
 }
 
-int main(int argc, char * argv[])
+int main(int argc, char* argv[])
 {
     if (argc != 2) {
         std::cerr << "Wrong number of parameters: ./vector-vs-list <no_elements>\n";
@@ -62,7 +62,7 @@ int main(int argc, char * argv[])
     l.push_back(0);
 
     auto vector_us = TimeFunc([&]() { BuildContainer(size, v); });
-    auto list_us = TimeFunc([&]() { BuildContainer(size, l); });
+    auto list_us   = TimeFunc([&]() { BuildContainer(size, l); });
 
     cout << "vector time: " << vector_us << " us \n";
     cout << "list time: " << list_us << " us \n";

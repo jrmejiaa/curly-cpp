@@ -1,11 +1,11 @@
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 #include "../include/int_array.hpp"
 
 using std::cout;
 
-int main() 
+int main()
 {
     cout << "Creating an empty array.\n";
     IntArray a(10);
@@ -15,12 +15,12 @@ int main()
     cout << "----------------------------------------------------------\n";
     cout << "Writing elements to a.\n";
     for (int i = 0; i < a.Size(); i++) {
-        a[i] = i*2;
+        a[i] = i * 2;
     }
 
     cout << "----------------------------------------------------------\n";
-    cout << "Elements of a: " << a <<  ".\n";
-    
+    cout << "Elements of a: " << a << ".\n";
+
     cout << "----------------------------------------------------------\n";
 
     cout << "Copying constructor a element to b.\n";
@@ -34,10 +34,10 @@ int main()
     b[9] = 100;
 
     cout << "----------------------------------------------------------\n";
-    cout << "Elements of a: " << a <<  ".\n";
+    cout << "Elements of a: " << a << ".\n";
 
     cout << "----------------------------------------------------------\n";
-    cout << "Elements of b: " << b <<  ".\n";
+    cout << "Elements of b: " << b << ".\n";
 
     return 0;
 }

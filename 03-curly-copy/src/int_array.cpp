@@ -9,7 +9,8 @@ IntArray::IntArray(int size)
     }
 }
 
-IntArray::IntArray(const IntArray& source) {
+IntArray::IntArray(const IntArray& source)
+{
     if (!source.IsEmpty()) {
         m_size = source.m_size;
 
@@ -22,13 +23,13 @@ IntArray::IntArray(const IntArray& source) {
     }
 }
 
-IntArray& IntArray::operator=(IntArray source) {
+IntArray& IntArray::operator=(IntArray source)
+{
     std::swap(*this, source);
     return *this;
-
 }
 
-int& IntArray::operator[](int index) 
+int& IntArray::operator[](int index)
 {
     if (index < 0 || index >= m_size) {
         throw IntArrayOutOfBoundsException();
@@ -59,6 +60,7 @@ bool IntArray::IsEmpty() const
     return (m_size == 0);
 }
 
-IntArray::~IntArray() {
+IntArray::~IntArray()
+{
     delete[] m_ptr;
 }

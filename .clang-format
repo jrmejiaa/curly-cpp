@@ -5,7 +5,7 @@ Language: Cpp
 BasedOnStyle: Google
 AccessModifierOffset: -1
 AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments: false
+AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
 AlignOperands: Align
 AllowAllArgumentsOnNextLine: true
@@ -24,7 +24,7 @@ BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel: false
   AfterClass: true
-  AfterStruct: false
+  AfterStruct: true
   AfterControlStatement: Never
   AfterEnum: true
   AfterFunction: true

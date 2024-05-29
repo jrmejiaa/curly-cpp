@@ -1,12 +1,12 @@
+#include <array>
 #include <iostream>
 #include <vector>
-#include <array>
 
 #include "../include/resouce.hpp"
 
+using std::array;
 using std::cout;
 using std::vector;
-using std::array;
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
     cout << "PLAYING WITH RESOURCE CLASS AND VECTORS " << "\n";
     cout << "---------------------------------------------" << "\n";
     Resource r("local-vector");
-    { // Brace of internal scope
+    {  // Brace of internal scope
         vector<Resource> resources;
         cout << "---------------------------------------------" << "\n";
         resources.push_back(r);
@@ -40,7 +40,7 @@ int main()
     cout << "PLAYING WITH RESOURCE CLASS AND ARRAYS " << "\n";
     cout << "---------------------------------------------" << "\n";
     Resource r2("local-array");
-    { // Brace of internal scope
+    {  // Brace of internal scope
         array<Resource, 5> resources;
         cout << "---------------------------------------------" << "\n";
         resources[0] = r2;

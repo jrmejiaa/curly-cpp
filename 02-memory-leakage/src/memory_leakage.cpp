@@ -1,11 +1,11 @@
-#include <iostream>
 #include <cassert>
+#include <iostream>
 
 #include "../include/int_array.hpp"
 
 using std::cout;
 
-int main() 
+int main()
 {
     cout << "Creating an empty array.\n";
     IntArray a{};

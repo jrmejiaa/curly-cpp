@@ -1,8 +1,8 @@
 #ifndef __RESOURCE_HPP__
 #define __RESOURCE_HPP__
 
-#include <string>
 #include <iostream>
+#include <string>
 
 class Resource
 {

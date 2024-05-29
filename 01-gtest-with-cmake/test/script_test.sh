@@ -1,4 +1,6 @@
-set -eu 
+#!/usr/bin/sh
+
+set -eu
 
 FILE="test_file"
 if [ -f $FILE ]; then

@@ -9,7 +9,7 @@ IntArray::IntArray(int size)
     }
 }
 
-int& IntArray::operator[](int index) 
+int& IntArray::operator[](int index)
 {
     if (index < 0 || index >= m_size) {
         throw IntArrayOutOfBoundsException();
@@ -27,7 +27,8 @@ bool IntArray::IsEmpty() const
     return (m_size == 0);
 }
 
-IntArray::~IntArray() {
+IntArray::~IntArray()
+{
     // Uncomment this lines to remove the Memory Leak
     // delete[] m_ptr;
 }

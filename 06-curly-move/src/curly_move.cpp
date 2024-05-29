@@ -1,9 +1,9 @@
+#include <algorithm>
 #include <chrono>
 #include <iostream>
 #include <list>
 #include <string>
 #include <vector>
-#include <algorithm>
 
 #include "../include/resouce.hpp"
 
@@ -45,7 +45,7 @@ void Exercise(const int& size, string name)
         s.reserve(ss);
         std::generate_n(std::back_inserter(s), ss, [ss]() { return (char)('!' + ss / 2); });
 
-        // Add new random string into the container 
+        // Add new random string into the container
         Type res(s);
 
         bool inserted = false;
@@ -62,9 +62,9 @@ void Exercise(const int& size, string name)
         }
     }
 
-    auto it = std::max_element(begin(v), end(v));
+    auto it    = std::max_element(begin(v), end(v));
     Type max_v = *it;
-    it = std::min_element(begin(v), end(v));
+    it         = std::min_element(begin(v), end(v));
     Type min_v = *it;
 
     bool sorted = std::is_sorted(begin(v), end(v));
@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
     int const size = std::atoi(argv[1]);
 
     auto vector_us = TimeFunc([&]() { Exercise<vector<Resource>>(size, "vector"); });
-    auto list_us = TimeFunc([&]() { Exercise<list<Resource>>(size, "list"); });
+    auto list_us   = TimeFunc([&]() { Exercise<list<Resource>>(size, "list"); });
 
     cout << "vector time: " << vector_us << " us \n";
     cout << "list time: " << list_us << " us \n";
